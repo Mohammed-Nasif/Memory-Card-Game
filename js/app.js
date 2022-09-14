@@ -1,25 +1,25 @@
 // Images Sources Object
 var cards = {
-	'../cards/imgxqq.jpg': 0,
-	'../cards/imgxww.jpg': 0,
-	'../cards/imgxee.jpg': 1,
-	'../cards/imgxrr.jpg': 1,
-	'../cards/imgxtt.jpg': 2,
-	'../cards/imgxyy.jpg': 2,
-	'../cards/imgxuu.jpg': 3,
-	'../cards/imgxii.jpg': 3,
-	'../cards/imgxoo.jpg': 4,
-	'../cards/imgxpp.jpg': 4,
-	'../cards/imgxaa.jpg': 5,
-	'../cards/imgxss.jpg': 5,
+	'cards/imgxqq.jpg': 0,
+	'cards/imgxww.jpg': 0,
+	'cards/imgxee.jpg': 1,
+	'cards/imgxrr.jpg': 1,
+	'cards/imgxtt.jpg': 2,
+	'cards/imgxyy.jpg': 2,
+	'cards/imgxuu.jpg': 3,
+	'cards/imgxii.jpg': 3,
+	'cards/imgxoo.jpg': 4,
+	'cards/imgxpp.jpg': 4,
+	'cards/imgxaa.jpg': 5,
+	'cards/imgxss.jpg': 5,
 };
 
 // -- Start Game Audios
-var gamemusic = new Audio('/audio/game-music.mp3');
-var clickAudio = new Audio('/audio/clickAudio.mp3');
-var right = new Audio('/audio/rigth.mp3');
-var wrong = new Audio('/audio/wrong.mp3');
-var winAudio = new Audio('/audio/win.mp3');
+var gamemusic = new Audio('audio/game-music.mp3');
+var clickAudio = new Audio('audio/clickAudio.mp3');
+var right = new Audio('audio/rigth.mp3');
+var wrong = new Audio('audio/wrong.mp3');
+var winAudio = new Audio('audio/win.mp3');
 wrong.volume = 0.6;
 // -- End Game Audios
 
