@@ -15,12 +15,12 @@ var cards = {
 };
 
 // -- Start Game Audios
-// var gamemusic = new Audio('audio/game-music.mp3');
-// var clickAudio = new Audio('audio/clickAudio.mp3');
-// var right = new Audio('audio/rigth.mp3');
-// var wrong = new Audio('audio/wrong.mp3');
-// var winAudio = new Audio('audio/win.mp3');
-// wrong.volume = 0.6;
+var gamemusic = new Audio('audio/game-music.mp3');
+var clickAudio = new Audio('audio/clickAudio.mp3');
+var right = new Audio('audio/rigth.mp3');
+var wrong = new Audio('audio/wrong.mp3');
+var winAudio = new Audio('audio/win.mp3');
+wrong.volume = 0.6;
 // -- End Game Audios
 
 // -- Start Global Variables
@@ -63,14 +63,14 @@ function chooseCards() {
 		var currentCard = e.target.closest('.wrapper'); // Get Only The Target Element With Class Wrapper [Card]
 		if (currentCard && flippedCards.length < 2) {
 			// Turn The Game Music On When The
-// 			gameMusicControl(onOfMusic);
+			gameMusicControl(onOfMusic);
 			if (!gameStartFlag) {
 				gameStartFlag = true; // Start The Game
 				timer(gameStartFlag); // Start The Game Timer
 			}
 			musicBtn.style.pointerEvents = 'auto';
 			flipCard(currentCard); // Flip The Current Card To ViewPort
-// 			clickAudio.play();
+			clickAudio.play();
 		}
 		if (flippedCards.length === 2) {
 			clickSwitch(false); // Turn Of The Click Ability On All Other Cards Till Check
@@ -105,8 +105,8 @@ function matched(card1, card2) {
 		card1.style.cssText = 'visibility:hidden; pointerEvents: none';
 		card2.style.cssText = 'visibility:hidden; pointerEvents: none';
 		moves++;
-// 		gamemusic.volume = 0.1;
-// 		right.play();
+		gamemusic.volume = 0.1;
+		right.play();
 		totalMatch++;
 	}
 }
@@ -117,8 +117,8 @@ function notMatched() {
 		child.style.pointerEvents = 'auto';
 		child.classList.remove('flipY');
 	});
-// 	gamemusic.volume = 0.1;
-// 	wrong.play();
+	gamemusic.volume = 0.1;
+	wrong.play();
 	moves++;
 }
 
@@ -143,7 +143,7 @@ function clickSwitch(switchFlag) {
 	document.querySelectorAll('.wrapper').forEach((card) => {
 		card.style.pointerEvents = switchFlag ? 'auto' : 'none';
 	});
-// 	gamemusic.volume = 1;
+	gamemusic.volume = 1;
 }
 
 // Start Timer Function
@@ -167,9 +167,9 @@ function timer(gameStartFlag) {
 // Function To Control The Game Audio
 function gameMusicControl(onOfMusic) {
 	if (onOfMusic) {
-// 		gamemusic.play();
+		gamemusic.play();
 	} else {
-// 		gamemusic.pause();
+		gamemusic.pause();
 	}
 }
 
@@ -184,7 +184,7 @@ function turnMusic() {
 			onOfMusic = true;
 			musicBtn.className = 'fa fa-volume-up';
 		}
-// 		gameMusicControl(onOfMusic);
+		gameMusicControl(onOfMusic);
 	});
 }
 turnMusic();
@@ -194,8 +194,8 @@ function isFinished(totalMatch) {
 	// If Total Matched Trials Is 6 So The Game Is Finished
 	if (totalMatch === 6) {
 		clearInterval(timerStart);
-// 		winAudio.play();
-// 		gamemusic.pause();
+		winAudio.play();
+		gamemusic.pause();
 		// Handling All Winning PopUp Screen
 		document.getElementById('win-popup').style.display = 'block';
 		document.getElementById('min').innerText =
