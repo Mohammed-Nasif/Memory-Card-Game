@@ -2,9 +2,15 @@
 
 ### ITI JavaScript ES5 Course Project
 
-##### Instructions
+---
+### Instructions:
 
-    - This Website is not responsive on all Screen Types so it's Recommended When you open it to adjust your Browser zoom Level Between (80%, 90%, 100%). It will looks nice when navBar shows all centered on the same line.
+	- This Website is not responsive on all Screen Types so it's Recommended When you open it to adjust 
+	  your Browser zoom Level Between (80%, 90%, 100%). It will looks nice when navBar shows 
+	  all centered on the same line.
+
+	- If you want to run project locally please try to open the project with live server if it's available to load the style correctly.
+---
 
 ## Table of contents
 
@@ -16,7 +22,7 @@
 
 This is a memory matching card game. The goal is to match each card's icon with its pair. There are 12 cards and 6 pairs total. Click on a card, remember its icon and spot in the grid, then continue clicking other cards until you find its match. The game ends once all pairs are matched.
 
-To play the game, click [here]().
+To play the game, click [here](https://mohammed-nasif.github.io/Memory-Card-Game/).
 
 ### Built with
 
