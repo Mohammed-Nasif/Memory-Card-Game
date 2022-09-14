@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Memory Card Game</title>
+		<link rel="icon" href="favicon.png" />
+		<meta name="description" content="Memory Card Game" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
+	<body>
+		<!--Start Background Animation Body-->
+		<div class="area">
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--End Background Animation Body-->
+		<!--Start Game Body-->
+		<div id="container">
+			<!--Game Header-->
+			<div id="gameName">
+				<h1>Memory Card Game</h1>
+			</div>
+			<!--Game Header-->
+			<!--Start Control Panel-->
+			<div class="control-panel">
+				<div class="moves">
+					<span class="moves" id="moves">0</span
+					><span id="movesText"> Moves</span>
+				</div>
+				<div id="timer"
+					><span id="timer-text">Timer: </span>
+					<label id="minutes">00</label>:<label id="seconds">00</label></div
+				>
+				<div class="restart" id="restart">
+					<span id="restart-text">Restart: </span><i class="fa fa-repeat"></i>
+				</div>
+				<div class="music" id="music">
+					<span id="music-text">Music: </span
+					><i id="musicIcon" class="fa fa-volume-up"></i>
+				</div>
+			</div>
+			<!--End Control Panel-->
+			<!--Start Cards Grids-->
+			<div id="cardsHolder">
+				<!--All Cards Append From JS-->
+			</div>
+			<!--End Cards Grids-->
+		</div>
+		<!--End Game Body-->
+		<!--Winner Popup [Source:W3S]-->
+		<div id="win-popup" class="popup zoomIn">
+			<div class="popup-content">
+				<span id="close">&times;</span>
+				<h1>Congratulations 🥳!</h1>
+				<h3
+					>You Made It Like A King 👑 In <span id="min"> 0 </span> minutes and
+					<span id="sec">0</span> seconds.</h3
+				>
+				<h3>Total moves: <span id="total-moves"> 0 </span></h3>
+				<button type="button" class="button" id="play-again-btn">
+					Play again!
+				</button>
+			</div>
+		</div>
+		<!--Winner Popup [Source:W3S]-->
+		<!--Main JS Script-->
+		<script src="js/app.js"></script>
+		<!--Main JS Script-->
+	</body>
+</html>
