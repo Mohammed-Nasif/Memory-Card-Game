@@ -156,7 +156,7 @@ h1 {
 	color: #4f4f4f;
 }
 #play-again-btn {
-	background-color: #8c4ed6;
+	background: #cf0072;
 	color: white;
 	font-size: 16px;
 	font-weight: normal;
@@ -169,7 +169,7 @@ h1 {
 }
 #play-again-btn:hover {
 	box-shadow: 3px 3px 8px #6f6f6f;
-	background-color: #9759e3;
+	background: #cf0072;
 	cursor: pointer;
 }
 #close {
