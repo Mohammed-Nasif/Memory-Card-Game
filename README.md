@@ -5,12 +5,11 @@
 ---
 ### Instructions:
 
+	- This Website is not responsive on all Screen Types so it's Recommended When you open it to adjust 
+	your Browser zoom Level Between (80%, 90%, 100%).
 
-             - This Website is not responsive on all Screen Types so it's Recommended When you open it to adjust 
-               your Browser zoom Level Between (80%, 90%, 100%).
-
-             - If you want to run project locally please try to open the project with live server 
-	       if it's available to load the style and scripts correctly.
+	- If you want to run project locally please try to open the project with live server 
+	if it's available to load the style and scripts correctly.
 
 ---
 
