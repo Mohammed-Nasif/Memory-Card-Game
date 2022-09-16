@@ -198,6 +198,15 @@ h1 {
 /*
 -- End Winning PopUp Styling
 */
+/*Copy Rigths*/
+.attribution {
+	margin-top: -40px;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(184, 100%, 53%);
+}
 /*Start Animations*/
 @-webkit-keyframes animatetop {
 	from {
